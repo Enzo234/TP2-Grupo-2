@@ -24,7 +24,7 @@ NodeJS estático.
 * Instalar las dependencias
 
 ```text
-npm intall
+npm install
 ```
 
 * Correr el servidor
