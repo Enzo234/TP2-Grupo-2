@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/investigacion.js"></script>
+    <title>Data Mesh</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <div class="BG-imagen"></div>
+        <header>
+            <a href="../index.html" title="Pagina Principal">
+                <img src="../imagenes/sigma-logo-mini.png" alt="logo" height="70" style="display: inline;"><br>
+                <h1 style="display: inline; margin-top: auto;">Grupo 2</h1>
+            </a>
+        </header>
+
+        <div class="menu-fondo">
+            <div class="menu">
+                <a href="../extension/index.html" class="button" title="Ghostery">Ghostery</a>
+                <a href="../recursos-util/index.html" class="button" title="Recursos Utilizados">Recursos Utilizados</a>
+                <a href="../blog/index.html" class="button" title="AI Upscaling">AI Upscaling</a>
+                <a href="../cuenta-twitter/index.html" class="button" title="Twitter de Kirk Borne">Twitter de Kirk
+                    Borne</a>
+                <a href="../tweet/index.html" class="button" title="Tweet interesante">Tweet interesante</a>
+            </div>
+        </div>
+
+        <div class="tab">
+            <button id="ini" class="tablinks" onclick="cambiarTAB(event, 'contenido')">CONTENIDO</button>
+            <button class="tablinks" onclick="cambiarTAB(event, 'cuestionario')">CUESTIONARIO</button>
+            <button id="Bres" class="tablinks" onclick="cambiarTAB(event, 'respuestas')" disabled>RESPUESTAS</button>
+        </div>
+
+        <div id="contenido" class="content">
+            <h1 class="titulo-especial">Data Mesh</h1>
+            <iframe width="1140" height="720" src="https://www.youtube.com/embed/qjGmLVWL6oY"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen style="border: 0px;"></iframe>
+            <h2 class="titulo-especial">Informacion</h2>
+            <div class="center">
+                <p class="clearfix anim fadeTop"><img src="imagenes/cc-screen1.jpeg" alt="PH" width="480"
+                        height="360" />
+                    Data Mesh consiste en la construcción de una infraestructura de autoservicio que permite a los
+                    equipos utilizar recursos y herramientas bajo demanda, para acceder a los datos correctos,
+                    procesarlos, prepararlos y analizarlos.
+                </p>
+                <p class="clearfix anim fadeTop"><img src="imagenes/cc-screen2.jpeg" alt="PH" width="480"
+                        height="360" />
+                    Cada dominio es dueño de sus productos de datos, lo que debe redundar en un mejor gobierno de los
+                    mismos.
+                    Los dominios son autónomos a la hora de desarrollar sus productos de datos por lo que hay una mayor
+                    agilidad.
+                    El equipo de plataforma está enfocado en la plataforma y su evolución debido a la autonomía que se
+                    ha brindado a los dominios.
+                    Es posible plantear una adopción incremental de este tipo de arquitecturas lo que permite iterar más
+                    rápido y elimina parcialmente el riesgo asociado al despliegue de grandes plataformas de datos.
+
+                </p>
+                <p class="clearfix anim fadeTop"><img src="imagenes/cc-screen3.jpeg" alt="PH" width="480"
+                        height="360" />
+                    Retos a resolver<br>
+                    Gobierno<br>
+                    Es necesario también un control centralizado que garantice que los acuerdos de gobierno.<br>
+                    Federación<br>
+                    Necesidad de definir correctamente la federación de servicios.<br>
+                    Lenguajes de consulta<br>
+                    Es necesario establecer alguno de los “idiomas” mínimos a cumplir para que
+                    haya interoperabilidad real.<br>
+                    Control<br>
+                    Se hace necesario que haya un sistema común que recoja esta información no dependiente de
+                    cada dominio federado.<br>
+                    Incentivos<br>
+                    Deben existir mecanismos que incentiven el cumplimiento de los interfaces federados y el
+                    buen gobierno.<br>
+                    Consultas entre dominios<br>
+                    Dependiendo del modelo de despliegue y arquitectura pueden surgirproblemas técnicos a resolver como
+                    el cruce de datos entre dominios.
+                </p>
+            </div>
+        </div>
+
+        <div id="cuestionario" class="content">
+            <h1 class="titulo-especial">Cuestionario acerca de Data Mesh</h1>
+            <form id="f-cuestionario">
+                <p class="clearfix" id="1-2">
+                    <label>1. ¿Con que conceptos se relaciona el data mesh?</label><br>
+                    <input type="radio" id="boton-1" name="boton_01" value="1"><label for="boton-1">Big Data</label><br>
+                    <input type="radio" id="boton-2" name="boton_01" value="2"><label for="boton-2">Almacenes de
+                        datos</label><br>
+                    <input type="radio" id="boton-3" name="boton_01" value="3"><label for="boton-3">Procesos
+                        ETL</label><br>
+                    <input type="radio" id="boton-4" name="boton_01" value="4"><label for="boton-4">Todas son
+                        correctas</label>
+                </p>
+                <p class="clearfix" id="2-5">
+                    <label>2. ¿Que es data lake?</label><br>
+                    <textarea name="textoA1" rows="3" cols="30"></textarea>
+                </p>
+                <p class="clearfix" id="3-2">
+                    <label>3. El data lake se basa en arquitectura de ficheros</label><br>
+                    <input type="radio" id="boton-5" name="boton_02" value="1"><label
+                        for="boton-5">Verdadero</label><br>
+                    <input type="radio" id="boton-6" name="boton_02" value="2"><label for="boton-6">Falso</label>
+                </p>
+                <p class="clearfix" id="4-3">
+                    <label>4. ¿Quien acuñó el término?</label><br>
+                    <input type="checkbox" id="opcion_4.1" name="opcion_4.1" value="1"><label for="opcion_4.1"> Ursula
+                        Owusu</label><br>
+                    <input type="checkbox" id="opcion_4.2" name="opcion_4.2" value="2"><label for="opcion_4.2"> Samuel
+                        Awuku</label><br>
+                    <input type="checkbox" id="opcion_4.3" name="opcion_4.3" value="3"><label for="opcion_4.3"> Zhamak
+                        Dehghani</label><br>
+                    <input type="checkbox" id="opcion_4.4" name="opcion_4.4" value="4"><label for="opcion_4.4"> Rebecca
+                        Akufo-Addo</label>
+                </p>
+                <p class="clearfix" id="5-5">
+                    <label>5. ¿Que es el Data Mesh?</label><br>
+                    <textarea name="textoA2" rows="3" cols="30"></textarea>
+                </p>
+                <p class="clearfix" id="6-1">
+                    <label>6. ¿En que se basa DATA MESH? </label><br>
+                    <input type="text" id="texto6" name="texto6" value="">
+
+                </p>
+                <p class="clearfix" id="7-2">
+                    <label>7. ¿Cuantos principios tiene Data Mesh?</label><br>
+                    <input type="radio" id="boton-7" name="boton_03" value="1"><label for="boton-7">4</label><br>
+                    <input type="radio" id="boton-8" name="boton_03" value="2"><label for="boton-8">3</label><br>
+                    <input type="radio" id="boton-9" name="boton_03" value="3"><label for="boton-9">5</label>
+                </p>
+                <p class="clearfix" id="8-5">
+                    <label>8. Cite las ventajas de Data mesh</label><br>
+                    <textarea name="textoA2" rows="3" cols="30"></textarea>
+                </p>
+                <p class="clearfix" id="9-5">
+                    <label>9. Cita los retos a resolver</label><br>
+                    <textarea name="textoA3" rows="3" cols="30"></textarea>
+                </p>
+                <p class="clearfix" id="10-2">
+                    <label>10. ¿Son la mayoría de los retos tecnicos?</label><br>
+                    <input type="radio" id="boton-10" name="boton_04" value="1"><label
+                        for="boton-10">Verdadero</label><br>
+                    <input type="radio" id="boton-11" name="boton_04" value="2"><label for="boton-11">Falso</label>
+                </p>
+                <p class="clearfix" id="11-5">
+                    <label>11. ¿Que significa manejar una plataforma de
+                        autoservicios?</label><br>
+                    <textarea name="textoA4" rows="3" cols="30"></textarea>
+                </p>
+                <p class="clearfix" id="12-4">
+                    <label>12. ¿Como el data mesh permite la union de datos?</label><br>
+                    <select name="menu">
+                        <option value="0">Seleccione una opcion</option>
+                        <option value="uno">Por medio de Selectores</option>
+                        <option value="dos">Por medio de Dominios</option>
+                        <option value="tres">Por medio de Filtros</option>
+                        <option value="cuatro">Por medio de Arquitecturas</option>
+                    </select>
+                </p>
+                <p class="clearfix" id="13-5">
+                    <label>13. ¿Con que fin nacio el data mesh?</label><br>
+                    <textarea name="textoA4" rows="3" cols="30"></textarea>
+                </p>
+                <p class="clearfix" id="14-2">
+                    <label>14. ¿Los usuarios del data mesh trabajan con datos previamente
+                        filtrados?</label><br>
+                    <input type="radio" id="boton-12" name="boton_05" value="1"><label
+                        for="boton-12">Verdadero</label><br>
+                    <input type="radio" id="boton-13" name="boton_05" value="2"><label for="boton-13">Falso</label>
+                </p>
+                <p class="clearfix" id="15-3">
+                    <label>15. ¿A nivel de organizacion, que le brinda a sus empleados una
+                        empresa que maneja el datamesh?</label><br>
+                    <input type="checkbox" id="opcion_15.1" name="opcion_15.1" value="1"><label for="opcion_15.1">
+                        Libertad</label><br>
+                    <input type="checkbox" id="opcion_15.2" name="opcion_15.2" value="2"><label for="opcion_15.2">
+                        Responsabilidad</label><br>
+                    <input type="checkbox" id="opcion_15.3" name="opcion_15.3" value="3"><label for="opcion_15.3">
+                        Poder</label><br>
+                    <input type="checkbox" id="opcion_15.4" name="opcion_15.4" value="4"><label for="opcion_15.4">
+                        Confianza</label>
+                </p>
+                <p class="clearfix" id="0-0">
+                    <button type="button" class="cue-boton" onclick="mostrarRespuestas()">RESULTADO</button>
+                </p>
+            </form>
+        </div>
+
+        <div id="respuestas" class="content">
+            <!-- SIN HACER TRAMPA >:) -->
+        </div>
+
+        <footer class="f-contenedor">
+            <div>
+                <a href="../index.html" class="f-conten-enlace">Pagina Principal</a>
+                <a href="../extension/index.html" class="f-conten-enlace">Extension</a>
+                <a href="../investigacion/index.html" class="f-conten-enlace">Tema investigacion</a>
+                <a href="../blog/index.html" class="f-conten-enlace">Blog interesante</a>
+                <a href="../cuenta-twitter/index.html" class="f-conten-enlace">Cuenta de twitter</a>
+                <a href="../tweet/index.html" class="f-conten-enlace">Tweet interesante</a>
+                <a href="../recursos-util/index.html" class="f-conten-enlace">Recursos Utilizados</a>
+            </div>
+            <div style="width: 25%;"></div>
+            <ul>
+                <li>Jose David Olmedo Rolon</li>
+                <li>Enzo Matheo Ciciolli Yudis</li>
+                <li>Ayrton José María Jara Sánchez</li>
+            </ul>
+            <div style="width: 25%;"></div>
+            <ul>
+                <li>Ingenieria de Software 3</li>
+                <li>Omar Esgaib Sánchez</li>
+                <li>Analisis de Sistemas - 2022</li>
+            </ul>
+        </footer>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

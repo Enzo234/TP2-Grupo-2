@@ -1,0 +1,19 @@
+{
+  "name": "tp2grupo2",
+  "version": "1.0.0",
+  "description": "Tp2 - NodeJs estatico - Grupo 2",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Grupo2",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
